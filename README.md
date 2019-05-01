@@ -1,3 +1,9 @@
+# 概要
+
+HTC Viveで10点トラッキングをするためのスクリプト群です． 
+https://github.com/sh-akira/VirtualMotionCapture 
+を参考にしています． 
+
 # 必要なAsset
 
 FinalIK
