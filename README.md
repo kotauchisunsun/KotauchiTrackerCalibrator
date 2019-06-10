@@ -1,8 +1,14 @@
 # 概要
 
-HTC Viveで10点トラッキングをするためのスクリプト群です． 
+VTuberを運用するためのちょっと便利なスクリプトを公開しています．
+
+- HTC Viveで10点トラッキング
+- 10点トラッキング用のHTC Viveのトラッカー自動認識
+
 https://github.com/sh-akira/VirtualMotionCapture 
 を参考にしています． 
+
+必須ではありませんが，利用の報告をしていただくと，著者は喜びます．
 
 # 必要なAsset
 
@@ -10,15 +16,17 @@ FinalIK
 
 # 使い方
 
-1. 自分のプロジェクトにすべてのソースコードをコピーしてください．
-2. KotauchiVRIKController.csをEmptyObjectにアサインし，それぞれの体の部位にあたるTrackerを設定してください．
-3. トラッカーを付けた状態でTポーズをとってください．
-4. Tポーズの状態でCを押すことでキャリブレーションが完了します．
+- [Unityで10点トラッキングをする方法](https://qiita.com/kotauchisunsun/items/19d828383a63ed7fdece)
+- [Unityで10点トラッキング専用のトラッカー自動認識](https://qiita.com/kotauchisunsun/items/4e741a601c807ad348f8)
 
 # 支援
 
-Fanbox
+Fanbox  
 https://www.pixiv.net/fanbox/creator/12173373
 
-欲しいものリスト
+欲しいものリスト  
 https://www.amazon.jp/hz/wishlist/ls/18OKOS7JPDKNQ?ref_=wl_share
+
+# License
+
+MIT
