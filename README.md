@@ -19,6 +19,17 @@ FinalIK
 - [Unityで10点トラッキングをする方法](https://qiita.com/kotauchisunsun/items/19d828383a63ed7fdece)
 - [Unityで10点トラッキング専用のトラッカー自動認識](https://qiita.com/kotauchisunsun/items/4e741a601c807ad348f8)
 
+# キーマッピング
+
+- K: 位置の調整
+- P: トラッカーの自動認識
+- C: トラッカーのキャリブレーション
+
+- N: ポーズへのノイズ付与開始
+- M: ポーズへのノイズ付与停止
+- E: Tポーズ
+- W: Lポーズ
+
 # 支援
 
 Fanbox  
