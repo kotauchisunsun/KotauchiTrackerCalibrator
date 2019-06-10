@@ -4,29 +4,45 @@ using UnityEngine;
 
 public class KotauchiPositionReplacer : MonoBehaviour
 {
-    public Transform[] transformTargets;
-    public Transform   target;
-    public Transform   origin;
-    public GameObject  transformOrigin;
+    public Transform tracker01;
+    public Transform tracker02;
+    public Transform tracker03;
+    public Transform tracker04;
+    public Transform tracker05;
+    public Transform tracker06;
+    public Transform tracker07;
+    public Transform tracker08;
+    public Transform tracker09;
+    public Transform tracker10;
+    public Transform target;
+    public Transform origin;
 
-    public GameObject[] gameObjects;
     public KotauchiTrackerDetectController detector;
 
-    public float rotY;
-    bool init;
+    private Transform[] transformTargets;
+    private GameObject[] gameObjects;
+    private GameObject transformOrigin;
+    private float rotY;
+    private bool init;
 
     // Start is called before the first frame update
     void Start()
     {
         gameObjects = new GameObject[10];
+        transformTargets = new Transform[10];
         init = false;
+        transformOrigin = new GameObject("transformOrigin");
 
-        /*
-        transformOrigin = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        transformOrigin.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
-        transformOrigin.name = "transformOrigin";
-        */    
-       transformOrigin = new GameObject("transformOrigin");
+        transformTargets[0] = tracker01;
+        transformTargets[1] = tracker02;
+        transformTargets[2] = tracker03;
+        transformTargets[3] = tracker04;
+        transformTargets[4] = tracker05;
+        transformTargets[5] = tracker06;
+        transformTargets[6] = tracker07;
+        transformTargets[7] = tracker08;
+        transformTargets[8] = tracker09;
+        transformTargets[9] = tracker10;
     }
 
     // Update is called once per frame
@@ -50,11 +66,6 @@ public class KotauchiPositionReplacer : MonoBehaviour
 
             for (int i = 0; i < 10; i++) {
                 GameObject obj = new GameObject("target" + i.ToString());
-                /*
-                GameObject obj = GameObject.CreatePrimitive(PrimitiveType.Cube);
-                obj.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
-                obj.name = "target" + i.ToString();
-                */
                 gameObjects[i] = obj;
             }
 
