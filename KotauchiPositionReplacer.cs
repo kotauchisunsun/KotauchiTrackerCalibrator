@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class KotauchiPositionReplacer : MonoBehaviour
 {
@@ -14,11 +15,11 @@ public class KotauchiPositionReplacer : MonoBehaviour
     public Transform tracker08;
     public Transform tracker09;
     public Transform tracker10;
-    public Transform target;
     public Transform origin;
 
     public KotauchiTrackerDetectController detector;
 
+    private Transform target;
     private Transform[] transformTargets;
     private GameObject[] gameObjects;
     private GameObject transformOrigin;
@@ -50,6 +51,9 @@ public class KotauchiPositionReplacer : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.K))
         {
+            var sortedTrackers = transformTargets.OrderBy(a => -a.position.y).ToArray();
+            target = sortedTrackers[0]; //一番y座標が高い頭のトラッカーを取ってくる
+
             rotY = origin.eulerAngles.y - target.eulerAngles.y;
             init = true;
 
